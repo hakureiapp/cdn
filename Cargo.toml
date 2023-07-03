@@ -23,7 +23,7 @@ actix-web = "4.3.1"
 dotenv = "0.15.0"
 env_logger = "0.10.0"
 jsonwebtoken = "8.3.0"
-log = "0.4.18"
+log = "0.4.19"
 rs-snowflake = "0.6.0"
 serde = { version = "1.0.163", features = ["derive"] }
 tokio = { version = "1.28.2", features = ["full", "tracing"] }
