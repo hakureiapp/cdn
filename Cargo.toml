@@ -27,7 +27,7 @@ log = "0.4.18"
 rs-snowflake = "0.6.0"
 serde = { version = "1.0.163", features = ["derive"] }
 tokio = { version = "1.28.2", features = ["full", "tracing"] }
-infer = "0.13.0"
+infer = "0.15.0"
 
 prisma-client-rust = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.8", default-features = false, features = [
     "postgresql",
