@@ -567,7 +567,7 @@ dependencies = [
  "jsonwebtoken",
  "log",
  "prisma-client-rust",
- "redis 0.23.0",
+ "redis",
  "redis-macros",
  "rs-snowflake",
  "serde",
@@ -2934,20 +2934,6 @@ dependencies = [
 
 [[package]]
 name = "redis"
-version = "0.22.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "aa8455fa3621f6b41c514946de66ea0531f57ca017b2e6c7cc368035ea5b46df"
-dependencies = [
- "combine 4.6.6",
- "itoa",
- "percent-encoding",
- "ryu",
- "sha1_smol",
- "url",
-]
-
-[[package]]
-name = "redis"
 version = "0.23.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3ea8c51b5dc1d8e5fd3350ec8167f464ec0995e79f2e90a075b63371500d557f"
@@ -2960,6 +2946,7 @@ dependencies = [
  "percent-encoding",
  "pin-project-lite",
  "ryu",
+ "sha1_smol",
  "tokio",
  "tokio-util",
  "url",
@@ -2967,11 +2954,11 @@ dependencies = [
 
 [[package]]
 name = "redis-macros"
-version = "0.1.1"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d69575acf48dfa2b9f9dae270d9ba3dfb8c0744127f712dd1f0d52fcc1a04647"
+checksum = "60eb39e2b44d4c0f9c84e7c5fc4fc3adc8dd26ec48f1ac3a160033f7c03b18fd"
 dependencies = [
- "redis 0.22.3",
+ "redis",
  "redis-macros-derive",
  "serde",
  "serde_json",
@@ -2979,9 +2966,9 @@ dependencies = [
 
 [[package]]
 name = "redis-macros-derive"
-version = "0.1.1"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "860f342ed895cdf87876fde234072e4dbefe7a1886879da2ecf4901f086109ee"
+checksum = "39550b9e94ce430a349c5490ca4efcae90ab8189603320f88c1d69f0326f169e"
 dependencies = [
  "proc-macro2",
  "quote",
